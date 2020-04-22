@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-git submodule init --recursive
-git submodule update --recursive
+git submodule update --init --recursive
 
 git submodule add https://${GITHUB_TOKEN}@github.com/${USER_SITE_REPOSITORY}.git public
 
