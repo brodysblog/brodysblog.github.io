@@ -19,3 +19,4 @@ jobs:
         env:
           USER_SITE_REPOSITORY: brodysblog/brodysblog.github.io
           GITHUB_TOKEN: ${{ secrets.JEKYLL_PAT }}
+          CNAME: www.brodysontheroad.com
