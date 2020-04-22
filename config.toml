@@ -1,0 +1,5 @@
+baseURL = "https://brodysblog.github.io/"
+languageCode = "en-us"
+title = "Brodys on the Road"
+
+theme = "docsy"

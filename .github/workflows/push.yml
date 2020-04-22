@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 0 * * *'
+name: publish on push and schedule
+
+jobs:
+
+  build:
+    name: generate and push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          ref: master
+      - uses: ./
+        env:
+          USER_SITE_REPOSITORY: brodysblog/brodysblog.github.io
+          GITHUB_TOKEN: ${{ secrets.JEKYLL_PAT }}
+          CNAME: brodysontheroad.com
