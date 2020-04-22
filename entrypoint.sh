@@ -8,9 +8,6 @@ git submodule update --init --recursive
 
 git submodule add https://${GITHUB_TOKEN}@github.com/${USER_SITE_REPOSITORY}.git public
 
-git branch gh-pages
-git checkout gh-pages
-
 echo "#################################################"
 echo "Starting the Hugo Action"
 
@@ -29,6 +26,8 @@ MAIL="${GITHUB_ACTOR}@users.noreply.github.com"
 ls -ltar
 cd public
 ls -ltar
+git branch gh-pages
+git checkout gh-pages
 git log -2
 git remote -v
 
