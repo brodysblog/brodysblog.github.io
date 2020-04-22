@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-sudo npm install -g postcss-cli
+npm install -g postcss-cli
 
 git submodule update --init --recursive
 
