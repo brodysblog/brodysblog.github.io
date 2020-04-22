@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-npm install -g postcss-cli autoprefixer
+npm install -g postcss-cli
+npm install -g autoprefixer
 
 git submodule update --init --recursive
 
