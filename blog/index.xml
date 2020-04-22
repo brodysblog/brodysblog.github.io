@@ -1,15 +1,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brodys on the Road – Brodys on the Road</title>
-    <link>https://brodysblog.github.io/</link>
-    <description>Recent content on Brodys on the Road</description>
+    <title>Brodys on the Road – Blogs</title>
+    <link>https://brodysblog.github.io/blog/</link>
+    <description>Recent content in Blogs on Brodys on the Road</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 22 Apr 2020 20:13:53 +0200</lastBuildDate>
     
-	  <atom:link href="https://brodysblog.github.io/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://brodysblog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
       
+        
       
     
     
