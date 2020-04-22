@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://brodysblog.github.io/"
 
 enableRobotsTXT = true
 

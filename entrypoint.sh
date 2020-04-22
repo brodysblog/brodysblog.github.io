@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+npm install -D --save autoprefixer
+npm install -D --save postcss-cli
+
 git submodule update --init --recursive
 
 git submodule add https://${GITHUB_TOKEN}@github.com/${USER_SITE_REPOSITORY}.git public
