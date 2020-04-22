@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+sudo npm install -g postcss-cli
+
 git submodule update --init --recursive
 
 git submodule add https://${GITHUB_TOKEN}@github.com/${USER_SITE_REPOSITORY}.git public
