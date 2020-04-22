@@ -8,6 +8,9 @@ git submodule update --init --recursive
 
 git submodule add https://${GITHUB_TOKEN}@github.com/${USER_SITE_REPOSITORY}.git public
 
+git branch gh-pages
+git checkout gh-pages
+
 echo "#################################################"
 echo "Starting the Hugo Action"
 
@@ -42,7 +45,7 @@ touch .nojekyll
 echo "Add all files."
 git add -A -v
 git status
-git diff-index --quiet HEAD || echo "Commit changes." && git commit -m 'Hugo build from Action' && echo "Push." && git push origin gh-pages
+git diff-index --quiet HEAD || echo "Commit changes." && git commit -m 'Hugo build from Action' && echo "Push." && git push origin
 
 echo "#################################################"
 echo "Published"
