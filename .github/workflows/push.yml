@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - hugo
   schedule:
     - cron:  '0 0 * * *'
 name: publish on push and schedule
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          ref: hugo
+          ref: master
       - uses: ./
         env:
           USER_SITE_REPOSITORY: brodysblog/brodysblog.github.io
